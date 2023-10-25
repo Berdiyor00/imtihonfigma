@@ -20,6 +20,7 @@ function register() {
         message.className = 'success';
         let inputData = `Ism: ${name}, Familya: ${surname}, Foydalanuvchi nomi: ${username}, Parol: ${password} !!!OK ni Bosing`;
         alert(inputData);
+
         document.getElementById('name').value = '';
         document.getElementById('surname').value = '';
         document.getElementById('username').value = '';
