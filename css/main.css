@@ -756,6 +756,19 @@ form input {
   text-align: center;
 }
 
+.news__about__big__wrapper img {
+  width: 447.65px;
+  height: 312px;
+}
+
+#articleContainer {
+  display: flex;
+}
+
+.allNews {
+  display: flex;
+}
+
 #register__form input {
   max-width: 768px;
   width: 100%;
