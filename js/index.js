@@ -19,10 +19,10 @@ xBtn.addEventListener('click', () => {
 
 })
 
-// var typed = new Typed('.news__hero__text', {
-//     strings: [' Step-by-step guide to choosing great font pairs'],
-//     backSpeed: 40,
-//     typeSpeed: 60,
-//     loop: true
+var typed = new Typed('.news__hero__text', {
+    strings: [' Step-by-step guide to choosing great font pairs'],
+    backSpeed: 40,
+    typeSpeed: 60,
+    loop: true
 
-// });
+});

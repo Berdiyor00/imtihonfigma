@@ -22,6 +22,10 @@ button {
     cursor: pointer;
 }
 
+.BUsnislink {
+    text-decoration: none;
+}
+
 @import './all_block/_header.scss';
 @import './all_block/fonts';
 @import './all_block/section';
@@ -29,3 +33,11 @@ button {
 @import './all_block/about-hero';
 @import './all_block/catigory';
 @import './all_block/register';
+@media(max-width:538px) {
+    h4 {
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+    .about__startup__text {}
+}

@@ -22,6 +22,10 @@ button {
   cursor: pointer;
 }
 
+.BUsnislink {
+  text-decoration: none;
+}
+
 nav {
   width: 100%;
   height: 80px;
@@ -697,6 +701,22 @@ form input {
     flex-direction: column;
   }
 }
+.date {
+  margin-top: 20px;
+  color: #592EA9;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.search_blog_input {
+  margin-top: 124px;
+}
+
 .category__background {
   width: 100%;
   height: 448px;
@@ -763,10 +783,47 @@ form input {
 
 #articleContainer {
   display: flex;
+  column-gap: 48px;
+  row-gap: 32px;
 }
 
 .allNews {
   display: flex;
+  column-gap: 48px;
+  row-gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .allNews {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pagination button {
+  max-width: 73px;
+  width: 100%;
+  height: 32px;
+  margin-top: 100px;
+  text-align: center;
+  border: 0;
+  background-color: #6D6E76;
+  color: #232536;
+  text-align: center;
+  font-family: "Sen";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
 }
 
 #register__form input {
@@ -824,4 +881,12 @@ form input {
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -2px;
+}
+
+@media (max-width: 538px) {
+  h4 {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

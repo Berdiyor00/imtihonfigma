@@ -3,10 +3,10 @@ const catigoryPost = document.querySelector('#articleContainer');
 const catigoryPage = document.querySelector('.pagination');
 let news;
 let pageSize = 10;
-let currentPage = 1;
+let currentPage = 5;
 
 async function allData() {
-    const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3816343ee18c40278630044af0497ee1');
+    const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-09-25&sortBy=publishedAt&apiKey=3816343ee18c40278630044af0497ee1');
     const data = await response.json();
     news = data.articles;
     newCard(news);
@@ -17,13 +17,16 @@ allData();
 
 function newCard(postData) {
     catigoryPost.innerHTML = "";
-    const start = (currentPage - 1) * pageSize;
+    const start = (currentPage - 5) * pageSize;
     const end = start + pageSize;
     postData.slice(start, end).forEach((element) => {
         catigoryPost.innerHTML += `<div class="allNews">
-        <img src="${element.urlToImage}" alt"${element.title}"> 
+        <img src="${element.urlToImage}"> 
        <div class="allNewsTitle"><h4 class="about__starup__title">${element.title}</h4>
-       <p class="about__startup__text">${element.description}</p></div>
+       <p class="about__startup__text">${element.description}</p>
+       <p class="date">${element.publishedAt}</p>
+       </div>
+      
         </div>`;
     });
 }
@@ -36,7 +39,7 @@ function serch() {
 }
 input.addEventListener('input', () => {
     serch();
-    currentPage = 1;
+    currentPage = 5;
     pagination();
 });
 
@@ -55,7 +58,7 @@ function pagination() {
     }
 }
 
-const url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3816343ee18c40278630044af0497ee1';
+const url = 'https://newsapi.org/v2/everything?q=tesla&from=2023-09-25&sortBy=publishedAt&apiKey=3816343ee18c40278630044af0497ee1';
 
 async function MyFun(url) {
     try {
