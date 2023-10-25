@@ -16,14 +16,14 @@ function register() {
         message.textContent = 'Parol kamida 8 belgidan iborat bo\'lishi kerak';
         message.className = 'error';
     } else {
-        // Display the input data
         message.textContent = 'Siz muvaffaqiyatli ro\'yxatdan o\'tdingiz:';
         message.className = 'success';
-
-        // Create a string with the input data
-        let inputData = `Ism: ${name}, Familya: ${surname}, Foydalanuvchi nomi: ${username}, Parol: ${password}`;
-
-        // Display the input data
+        let inputData = `Ism: ${name}, Familya: ${surname}, Foydalanuvchi nomi: ${username}, Parol: ${password} !!!OK ni Bosing`;
         alert(inputData);
+        document.getElementById('name').value = '';
+        document.getElementById('surname').value = '';
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
+        document.getElementById('confirmPassword').value = '';
     }
 }

@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </head>
+
 
 <body>
     <nav>
-
         <div class="container">
             <div class="navbar__news">
                 <div class="navbar__news__menu">
@@ -25,36 +24,27 @@
                         <li class="navbar__menu__lists__item"><a href="./index.html" class="navbar__menu__lists__link">Home</a></li>
                         <li class="navbar__menu__lists__item"><a href="./catigory.html" class="navbar__menu__lists__link">Catigory</a></li>
                         <li class="navbar__menu__lists__item"><a href="./all_post.html" class="navbar__menu__lists__link">All Posts</a></li>
-
                     </ul>
                 </div>
                 <a href="./register.html"><button class="navbar__menu__lists__link__btn">Login</button></a>
-
             </div>
         </div>
     </nav>
     <main>
         <section>
-            <div class="container">
-                <h2 class="register__title">
-                    Register
-                </h2>
-                <div class="register__wrapper">
-
-                    <form action="#" id="register__form">
-                        <input type="text" name="FirstName" id="nameInput" placeholder="Firstname" required>
-                        <input type="text" name="LastName" id="surnameInput" placeholder="Lastname" required>
-                        <input type="text" name="Username" id="userNameInput" placeholder="Username" required>
-                        <input type="password" name="Password" id="passworInput" placeholder="Password" required>
-                        <input type="password" name="confiremPassword" id="confiremPassworInput" placeholder="Confirm password" required>
-
-                    </form>
-
-                    <button type="submit" id="registerBtn">Register</button>
-                </div>
-                <div class="masegewrapp">
-                    <p id="message"></p>
-                </div>
+            <div class="register__wrapper">
+                <h1 class="register__title">Ro'yxatdan o'tkazish</h1>
+                <form id="register__form">
+                    <input type="text" id="name" placeholder="Ism" required>
+                    <input type="text" id="surname" placeholder="Familya" required>
+                    <input type="text" id="username" placeholder="Foydalanuvchi nomi" required>
+                    <input type="password" id="password" placeholder="Parol" required>
+                    <input type="password" id="confirmPassword" placeholder="Parolni tasdiqlang" required>
+                    <button id="registerBtn" type="button" onclick="register()">Ro'yxatdan o'tkazish</button>
+                </form>
+            </div>
+            <div class="masegewrapp">
+                <p id="message"></p>
             </div>
         </section>
     </main>
@@ -62,14 +52,12 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__about">
-                    <p class="footer__title">
-                        Finstreet 118 2561 Fintown
-                    </p>
+                    <p class="footer__title">Finstreet 118 2561 Fintown</p>
                     <p class="footer__title__item">
-                        <a href="https://www.finsweet.com" class="footer__link">Hello@finsweet.com</a> <a href="tel:020 7993 2905" class="footer__tel"> 020 7993 2905</a>
+                        <a href="https://www.finsweet.com" class="footer__link">Hello@finsweet.com</a>
+                        <a href="tel:020 7993 2905" class="footer__tel">020 7993 2905</a>
                     </p>
                 </div>
-
                 <div class="footer__icon">
                     <a href="https://www.facebook.com"> <img src="./imgs/icons/Negative.svg" alt="Facebook"></a>
                     <a href="https://www.twitter.com"><img src="./imgs/icons/tviter.svg" alt="tvitter"></a>
@@ -80,8 +68,9 @@
         </div>
     </footer>
 
-    <script src="./js/index.js"></script>
-    <script src="./js/register.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/register.js">
+    </script>
 </body>
 
 </html>

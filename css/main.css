@@ -524,7 +524,7 @@ footer {
   width: 100%;
   height: 164px;
   background-color: #232536;
-  margin-top: 73px;
+  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -567,10 +567,6 @@ footer {
   display: flex;
   align-items: center;
   column-gap: 26px;
-}
-
-footer {
-  position: static;
 }
 
 .abbout__search__btn {
@@ -826,10 +822,57 @@ form input {
   column-gap: 15px;
 }
 
+#register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 768px;
+  width: 100%;
+  row-gap: 19px;
+}
+
+#registerBtn {
+  width: 768px;
+  height: 64px;
+  flex-shrink: 0;
+  background-color: #FFD050;
+  border: 0;
+  margin-top: 90px;
+  font-family: "Sen";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #232536;
+}
+
+#registerBtn:active {
+  background-color: aliceblue;
+  transition: 0.2s;
+}
+
+.register__title {
+  color: #232536;
+  text-align: center;
+  font-family: "Sen";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+  padding-top: 230px;
+}
+
 #register__form input {
   max-width: 768px;
   width: 100%;
   height: 76px;
+  font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+  font-family: "Inter", sans-serif;
 }
 
 .register__wrapper {
@@ -864,6 +907,8 @@ form input {
   font-weight: 700;
   line-height: 32px;
   color: #232536;
+  margin-top: 0;
+  position: relative;
 }
 
 #registerBtn:active {
@@ -872,15 +917,36 @@ form input {
 }
 
 .register__title {
-  margin-top: 128px;
   color: #232536;
   text-align: center;
-  font-family: Sen;
+  font-family: "Sen";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -2px;
+}
+
+.error {
+  border: 2px solid red;
+  position: absolute;
+  bottom: -35px;
+}
+
+.success {
+  border: 2px solid green;
+  position: absolute;
+  bottom: -35px;
+}
+
+.masegewrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 200px;
 }
 
 @media (max-width: 538px) {
