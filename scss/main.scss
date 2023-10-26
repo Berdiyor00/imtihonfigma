@@ -26,13 +26,6 @@ button {
     text-decoration: none;
 }
 
-@import './all_block/_header.scss';
-@import './all_block/fonts';
-@import './all_block/section';
-@import './all_block/footer';
-@import './all_block/about-hero';
-@import './all_block/catigory';
-@import './all_block/register';
 @media(max-width:538px) {
     h4 {
         max-width: 400px;
@@ -40,3 +33,11 @@ button {
         text-align: center;
     }
 }
+
+@import './all_block/_header.scss';
+@import './all_block/fonts';
+@import './all_block/section';
+@import './all_block/footer';
+@import './all_block/about-hero';
+@import './all_block/catigory';
+@import './all_block/register';
