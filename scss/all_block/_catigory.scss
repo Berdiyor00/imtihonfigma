@@ -66,6 +66,13 @@
     display: flex;
     column-gap: 48px;
     row-gap: 32px;
+    flex-wrap: wrap;
+}
+
+.about__starup__title h4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .allNews {
@@ -106,4 +113,11 @@
     align-items: center;
     justify-content: center;
     column-gap: 15px;
+}
+
+@media (max-width:538px) {
+    .news__about__big__wrapper img {
+        width: 350px;
+        height: 270px;
+    }
 }

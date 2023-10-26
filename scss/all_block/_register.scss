@@ -72,7 +72,6 @@
     line-height: 32px;
     color: #232536;
     margin-top: 0;
-    position: relative;
 }
 
 #registerBtn:active {
@@ -94,14 +93,12 @@
 
 .error {
     border: 2px solid red;
-    position: absolute;
-    bottom: -35px;
+    margin-top: 30px;
 }
 
 .success {
     border: 2px solid green;
-    position: absolute;
-    bottom: -35px;
+    margin-top: 30px;
 }
 
 .masegewrapp {
