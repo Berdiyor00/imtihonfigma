@@ -362,6 +362,10 @@ nav {
   display: none;
 }
 
+.news__catigore__card {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "Inter", sans-serif;
   src: url(/fonst/Inter-Regular.ttf);
