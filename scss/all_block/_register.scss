@@ -110,3 +110,19 @@
 footer {
     margin-top: 200px;
 }
+
+@media(max-width:538px) {
+    #register__form input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #000;
+        max-width: 400px;
+        border-radius: 0px;
+        font-size: 18px;
+    }
+     ::placeholder {
+        font-family: Algerian;
+        color: #303a81;
+    }
+}
